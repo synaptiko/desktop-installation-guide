@@ -145,13 +145,19 @@
 		WIRELESS_REGDOM="CZ"
 	$ sudo pacman -S python python-pip python2 git pkgfile
 	$ sudo pacman -S xf86-video-intel mesa xorg-server xorg-xinit xf86-input-libinput
-	$ sudo pacman -S i3-wm numlockx chromium xfce4-terminal
+	$ sudo pacman -S i3-wm numlockx chromium xfce4-terminal xsel
 	$ sudo pkgfile --update
 	$ vim ~/.xinitrc
 		#!/usr/bin/env bash
 		[[ -f ~/.Xresources ]] && xrdb -merge -I$HOME ~/.Xresources
 		numlockx &
 		exec i3
+	$ ssh-keygen -t rsa -b 4096 -C "jprokop@synaptiko.cz (jprokop-<some-unique-short-machine-nickname>)"
+	$ cat ~/.ssh/id_rsa.pub | xsel -i -b
+
+- add public key to your github account
+
+	$ git clone git@github.com:synaptiko/dotfiles.git .files
 
 #### Included/excluded packages explanation
 
