@@ -357,6 +357,7 @@ Enter a selection (default=all): all
 	- file roller?, remmina, gnome-disks, gparted
 	- android studio, java, apache-ant (?), virtual box (+ image win+edge/ie11), gimp, inkscape, udiskie, ranger, docker
 	- libreoffice
+	- bc
 - what to replace by my implementations:
 	- xlunch
 	- i3lock (with date/time)
@@ -373,3 +374,4 @@ Enter a selection (default=all): all
 ```
 vim /etc/pacman.conf: Uncomment #Color
 ```
+- after .files are run (and gpg configured properly), you should run: `ssh-add ~/.ssh/id_rsa`
