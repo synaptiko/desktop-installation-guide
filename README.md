@@ -249,6 +249,7 @@ git clone https://github.com/synaptiko/.files
 cd .files
 git remote remove origin
 git remote add origin git@github.com:synaptiko/.files.git
+./install-pgp-keys.sh
 ./install-dependencies.sh
 ./init.sh
 ```
