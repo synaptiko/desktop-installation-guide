@@ -170,7 +170,9 @@ echo jprokop-<some-unique-short-machine-nickname> > /etc/hostname
 - create new user
 ```
 pacman -S zsh
-useradd -m -g users -s /usr/bin/zsh jprokop
+groupadd jprokop
+useradd -m -g jprokop -s /usr/bin/zsh jprokop
+gpasswd -a jprokop users
 gpasswd -a jprokop lp
 gpasswd -a jprokop wheel
 gpasswd -a jprokop network
