@@ -290,6 +290,11 @@ cat ~/.ssh/id_rsa.pub | xsel -i -b
 
 - add public key to your github & bitbucket account
 
+- add ssh key to ssh agent
+```
+ssh-add ~/.ssh/id_rsa
+```
+
 ## Included/excluded packages explanation
 
 **base group:**
