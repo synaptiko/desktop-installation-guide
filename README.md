@@ -343,6 +343,7 @@ Enter a selection (default=all): all
 - passwords etc. to KeepassXC + figure out where to synchronize (probably still Bitbucket)
 - prepare installation tool/helper/guide/wizard whatever… rewrite the installation with help of it
 - something like xlunch in js+html
+- start using [`iwd`](https://wiki.archlinux.org/index.php/Iwd) with NetworkManager: https://wiki.archlinux.org/index.php/NetworkManager#Using_iwd_as_the_Wi-Fi_backend
 - create simple "nautilus" replacement in js+html
 	- create "tree" view to replace nerdtree in vim
 - add note about optional deps in this tutorial… make it generic (for both desktop+laptop [later maybe server])
