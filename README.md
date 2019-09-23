@@ -262,6 +262,7 @@ sudo systemctl enable ufw
 sudo systemctl start ufw
 sudo ufw allow in ssh comment ssh
 sudo ufw reload
+sudo ufw enable
 ```
 
 ### Install TLP (**L** variant)
