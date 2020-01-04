@@ -229,6 +229,13 @@ sudo timedatectl set-ntp true
 sudo wifi-menu
 ```
 
+- enable fstrim timer for weekly SSD trims (only with SSD disk)
+```
+sudo systemctl enable fstrim.timer
+sudo systemctl start fstrim.timer
+sudo systemctl start fstrim.service
+```
+
 ### Install pacaur (prerequisite for .files deps installation)
 ```
 sudo pacman -S git
@@ -335,6 +342,9 @@ Enter a selection (default=all): all
 
 ## TODO
 
+- update with removal of base group (now some things has to be installed manually, ie. kernel)
+- update steps of usage of pacaur with yay; and i3 with sway
+- update installation of .files
 - modularize .files, improve initialization; few interesting ideas here: https://github.com/gerritwalther/dotfiles; namely:
 	- git bootstrapping: email, name, ssh configs? (+ something for work repositories?)
 	- .gituser/gitconfig
