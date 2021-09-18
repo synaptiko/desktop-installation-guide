@@ -135,9 +135,9 @@ echo -e "/dev/mapper/crypthome\t/\text4\trw,relatime,data=ordered,errors=remount
 - setup the system in the chrooted env (see [Encrypting an entire system/Configuring mkinitcpio](https://wiki.archlinux.org/index.php/Dm-crypt/Encrypting_an_entire_system#Configuring_mkinitcpio))
 ```
 arch-chroot /mnt /bin/bash
-sed -i '/^#\(cs_CZ\|en_US\)\.UTF-8/s/^#//' /etc/locale.gen
+sed -i '/^#\(cs_CZ\|en_US\|en_GB\)\.UTF-8/s/^#//' /etc/locale.gen
 locale-gen
-echo LANG=en_US.UTF-8 > /etc/locale.conf
+echo LANG=en_GB.UTF-8 > /etc/locale.conf
 ln -sf /usr/share/zoneinfo/Europe/Prague /etc/localtime
 hwclock --systohc --utc
 sed -i '/^HOOKS=/s/".\+"/"systemd autodetect modconf keyboard block sd-encrypt filesystems fsck"/' /etc/mkinitcpio.conf
